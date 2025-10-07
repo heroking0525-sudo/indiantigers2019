@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INDIAN TIGERS™ [2019]</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <h3>🇮🇳 WELCOME TO</h3>
+      <h1>𝐈𝐍𝐃𝐈𝐀𝐍 𝐓𝐈𝐆𝐄𝐑𝐒 🐅™ [2019]</h1>
+      <p class="subs">49,105 Subscribers</p>
+
+      <h2>WELCOME TO INDIAN TIGERS™ FAMILY 🎉</h2>
+      <p class="timer"><span id="timer">60</span> Seconds Left Only</p>
+
+      <p>🔥 For New Vikrant ID Click Below 👇</p>
+
+    <button id="joinBtn" onclick="window.location.href='https://t.me/+DpY3U1x06wZmZDI1'">JOIN [𝐈𝐍𝐃𝐈𝐀𝐍 𝐓𝐈𝐆𝐄𝐑𝐒 🐅™ [2019]] CHANNEL</button>
+
+      <p class="disclaimer">
+        ⚠️ Disclaimer: We are not promoting gambling from any source.  
+        This website is made only for entertainment and informational purposes.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Countdown Timer
+    let seconds = 60;
+    const timerEl = document.getElementById("timer");
+
+    const countdown = setInterval(() => {
+      seconds--;
+      timerEl.textContent = seconds;
+      if (seconds <= 0) {
+        clearInterval(countdown);
+        timerEl.textContent = "0";
+      }
+    }, 1000);
+
+    // Fade In/Out Button Animation
+    const btn = document.getElementById("joinBtn");
+    let fade = true;
+
+    setInterval(() => {
+      btn.style.opacity = fade ? "0.4" : "1";
+      fade = !fade;
+    }, 800);
+  </script>
+</body>
+</html>
